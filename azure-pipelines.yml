@@ -23,18 +23,18 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.SourcesDirectory)/api/build/src' 
+    pathtoPublish: '$(Build.SourcesDirectory)/build/src' 
     artifactName: 'Publish Node API' 
   displayName: 'Publish Node API source'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.SourcesDirectory)/api/web.config' 
+    pathtoPublish: '$(Build.SourcesDirectory)/web.config' 
     artifactName: 'Publish Node API' 
   displayName: 'Publish Node API config'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.SourcesDirectory)/api/package.json' 
+    pathtoPublish: '$(Build.SourcesDirectory)/package.json' 
     artifactName: 'Publish Node API' 
   displayName: 'Publish Node API package.json'
