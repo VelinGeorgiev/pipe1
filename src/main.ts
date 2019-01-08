@@ -43,7 +43,7 @@ server.use(passport.session());
 
 server.get('/', (_: any, res: any, next: any) => {
 
-  res.json({ message: 'Hello from Node.js API!' });
+  res.json({ message: 'Hello from Node.js API v3!' });
 
   next();
 });
@@ -58,7 +58,7 @@ server.get('/api/secured', passport.authenticate('oauth-bearer', { session: fals
 
 server.listen(process.env.PORT || 3000);
 
-console.log('Server running http://localhost:30001');
+console.log('Server running http://localhost:3000');
 
 const stop = (): void => {
   server.close();
