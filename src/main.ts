@@ -43,7 +43,7 @@ server.use(passport.session());
 
 server.get('/', (_: any, res: any, next: any) => {
 
-  res.json({ message: 'Hello from Node.js API v3!' });
+  res.json({ message: 'Hello from Node.js API v1!' });
 
   next();
 });
